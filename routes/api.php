@@ -12,3 +12,4 @@ Route::get('/user', function (Request $request) {
 
 Route::apiResource('/posts', App\Http\Controllers\Api\PostController::class);
 Route::apiResource('/posts', PostController::class);
+Route::put('/posts/{id}', [PostController::class, 'update']);
